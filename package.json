@@ -1,0 +1,49 @@
+{
+  "name": "traux",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "prettier": "prettier --write \"src/**/*.js\"",
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "public-class": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.2",
+    "prettier": "^1.14.1"
+  },
+  "babel": {
+    "ignore": [
+      "**/*.test.js"
+    ],
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "8"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      ["transform-object-rest-spread", { "useBuiltIns": true }]
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "jest": {
+    "testURL": "http://localhost"
+  }
+}
