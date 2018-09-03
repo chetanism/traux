@@ -1,6 +1,6 @@
 {
   "name": "traux",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
@@ -36,7 +36,12 @@
       ]
     ],
     "plugins": [
-      ["transform-object-rest-spread", { "useBuiltIns": true }]
+      [
+        "transform-object-rest-spread",
+        {
+          "useBuiltIns": true
+        }
+      ]
     ]
   },
   "prettier": {
